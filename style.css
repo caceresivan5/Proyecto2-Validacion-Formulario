@@ -1,0 +1,208 @@
+/*Globales*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+background-color: rgb(247, 247, 247);
+
+}
+body{
+width: 100%;
+height: 70rem;
+background: #5433FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin: 4rem auto;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem auto 0rem;
+    
+}
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding: 2rem;
+    
+}
+hr{
+    background-color: rgb(52, 52, 52);
+    height: 2px;
+}
+
+.formulario{
+    width:70%;
+    margin: 6rem auto;
+    border: 1px solid black;
+
+    background-color: white;
+}
+.cabecera{
+    color: white;
+    background-color: rgb(159, 0, 85);
+    padding: 1rem;
+}
+.formularioCuerpo{
+    padding: 2rem;
+}
+.botonesForm{
+    text-align: center;
+}
+.botonesForm button{ 
+    margin: 2rem ;
+    width: 20%;
+}
+@media(max-width: 630px) {
+    .botonesForm button{ 
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        margin: 1rem auto;
+        width: 60%;
+       
+    }
+}
+
+.inputform{
+    margin: 2rem;
+}
+@media(min-width: 630px) {
+    .formularioCuerpo{ 
+        width: 60%;
+        margin: 1rem auto;
+       
+    }
+    #asunto , #email2{
+        height: 3.5rem;
+    }
+}
+
+.btn-enviar{
+    background-color: rgb(0, 128, 255);
+    color: white;
+    
+    height: 5rem; 
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+.btn-enviar:hover{
+    cursor: pointer;
+    background-color: rgb(2, 93, 184);
+}
+.btn-enviar img{
+width: 15%;
+margin: auto 0.5rem;
+}
+@media(max-width: 760px) {
+    .btn-enviar img, 
+    .btn-resetear img{ 
+        display: none;
+    }
+}
+
+/*cuando se crea la nueva clase*/
+.botonesForm .enviarBoton{
+    color: white;
+    cursor:not-allowed;
+    opacity: 0.2; 
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.botonesForm .enviarBoton:hover{
+    color: white;
+    cursor:not-allowed;
+    opacity: 0.5; 
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.botonesForm .btn-resetear{
+    background-color: green;
+    color: white;
+    opacity: 1.1;
+    height: 5rem; 
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.btn-resetear img{
+    width: 15%;
+    margin: auto 0.5rem;
+    }
+.botonesForm .btn-resetear:hover{
+    background-color: rgb(0, 101, 0);
+    color: white;
+    opacity: 1.1;
+    height: 5rem;  
+}
+
+.formularioCuerpo .error{
+    border: 1px solid red;
+}
+.formularioCuerpo .validacionOk{
+    border: 1px solid green;
+ }
+.MensajeFinal{
+    color: red;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.mensajeFinalValidacion{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    color: green;
+    font-weight: bold;
+   
+}
+
+/* SPINNER */
+.spinner{
+    display: none;
+}
+#loading {
+    margin: 2rem auto;
+    
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: rgb(255, 9, 9);
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
